@@ -13,4 +13,11 @@ router.get('/', function(req, res, next) {
   res.json(users);
 });
 
+router.post('/', function(req, res, next) {
+  let newUser = req.body;
+  newUser.id = users.length + 1;
+  users.push(newUser);
+  res.json(users);
+});
+
 module.exports = router;
