@@ -6,7 +6,7 @@ let users = [
   {id: 2, name: "Bob"},
   {id: 3, name: "Jane"},
   {id: 4, name: "John"}
-]
+];
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
